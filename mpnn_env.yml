@@ -1,0 +1,32 @@
+name: mpnn_env
+channels:
+  - pytorch
+  - nvidia     # modern CUDA wheels
+  - conda-forge
+dependencies:
+  - python=3.10
+  # deep-learning core
+  - pytorch
+  - torchvision
+  - torchaudio
+ # - cudatoolkit=11.8
+  # scientific stack
+  - numpy
+  - scipy
+  - pandas
+  - biopython      # PDB / FASTA parsing
+  - pdb-tools
+  - tqdm
+  # plotting & logos (optional but nice)
+  - matplotlib
+  - logomaker
+  - seaborn
+  # training-time extras
+  - mdtraj         # torsion helpers in training/
+  - scikit-learn   # quick clustering or PCA
+  - tensorboard    # loss curves
+  - pip
+  - pip:
+      - wandb      # cloud logging (optional)
+      # uncomment the next line **only** if you have a Rosetta license
+      # - pyrosetta

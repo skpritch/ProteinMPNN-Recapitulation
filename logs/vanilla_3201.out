@@ -1,0 +1,29 @@
+Active conda environment: 
+# conda environments:
+#
+base                   /home/skpritch/miniconda3
+HINT_env               /home/skpritch/miniconda3/envs/HINT_env
+mpnn_env             * /home/skpritch/miniconda3/envs/mpnn_env
+Starting ProteinMPNN vanilla training:
+  epochs       = 150
+  batch size   = 10000
+  neighbors    = 48
+  noise level  = 0.8
+  output dir   = outputs/v_e150_b10000_n48_noise0.8
+Traceback (most recent call last):
+  File "/home/skpritch/MPNN/training/training.py", line 252, in <module>
+    argparser.add_argument("--ca_only", action="store_true", default=False, help="Train on Cα-only backbones (strip all non-Cα atoms)")
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1448, in add_argument
+    return self._add_action(action)
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1814, in _add_action
+    self._optionals._add_action(action)
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1650, in _add_action
+    action = super(_ArgumentGroup, self)._add_action(action)
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1462, in _add_action
+    self._check_conflict(action)
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1599, in _check_conflict
+    conflict_handler(action, confl_optionals)
+  File "/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/argparse.py", line 1608, in _handle_conflict_error
+    raise ArgumentError(action, message % conflict_string)
+argparse.ArgumentError: argument --ca_only: conflicting option string: --ca_only
+Job completed successfully.

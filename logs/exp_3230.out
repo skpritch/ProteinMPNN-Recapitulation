@@ -1,0 +1,19 @@
+Environment: mpnn_env             * /home/skpritch/miniconda3/envs/mpnn_env
+Starting ProteinMPNN expy training:
+  epochs     = 150
+  batch size = 10000
+  neighbors  = 48
+  noise      = 0.02
+  output dir = outputs/exp1_e150_b10000_n48_noise0.02
+/home/skpritch/MPNN/training/exp_training.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+Traceback (most recent call last):
+  File "/home/skpritch/MPNN/training/exp_training.py", line 258, in <module>
+    main(args)   
+  File "/home/skpritch/MPNN/training/exp_training.py", line 77, in main
+    model = ProteinMPNN(node_features=args.hidden_dim, 
+  File "/home/skpritch/MPNN/training/model_utils.py", line 419, in __init__
+    self.features = ProteinFeatures(node_features, edge_features, top_k=k_neighbors, augment_eps=augment_eps, use_distance_feats=use_distance_feats, use_edge_updates=use_edge_updates)
+TypeError: ProteinFeatures.__init__() got an unexpected keyword argument 'use_distance_feats'
+/var/spool/slurmd/job03230/slurm_script: line 55: --use_distance_feats: command not found
+Exp training job completed.

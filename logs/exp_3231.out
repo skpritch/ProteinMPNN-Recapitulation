@@ -1,0 +1,680 @@
+Output directory outputs/exp1_e150_b10000_n48_noise0.02 already exists, continuing.
+Environment: mpnn_env             * /home/skpritch/miniconda3/envs/mpnn_env
+Starting ProteinMPNN expy training:
+  epochs     = 150
+  batch size = 10000
+  neighbors  = 48
+  noise      = 0.02
+  output dir = outputs/exp1_e150_b10000_n48_noise0.02
+/home/skpritch/MPNN/training/exp_training.py:24: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:237: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  meta = torch.load(PREFIX+".pt")
+/home/skpritch/MPNN/training/utils.py:264: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chains = {c:torch.load("%s_%s.pt"%(PREFIX,c))
+/home/skpritch/MPNN/training/utils.py:249: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  chain = torch.load("%s_%s.pt"%(PREFIX,chid))
+Training Progress:   0%|          | 0/150 [00:00<?, ?it/s]
+Epoch 1:   0%|          | 0/1492 [00:00<?, ?it/s][A/home/skpritch/MPNN/training/exp_training.py:148: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/skpritch/miniconda3/envs/mpnn_env/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+
+Epoch 1:   0%|          | 1/1492 [00:00<18:47,  1.32it/s][A
+Epoch 1:   0%|          | 2/1492 [00:01<12:47,  1.94it/s][A
+Epoch 1:   0%|          | 3/1492 [00:01<10:41,  2.32it/s][A
+Epoch 1:   0%|          | 4/1492 [00:01<09:13,  2.69it/s][A
+Epoch 1:   0%|          | 5/1492 [00:02<08:43,  2.84it/s][A
+Epoch 1:   0%|          | 6/1492 [00:02<08:02,  3.08it/s][A
+Epoch 1:   0%|          | 7/1492 [00:02<07:48,  3.17it/s][A
+Epoch 1:   1%|          | 8/1492 [00:02<07:30,  3.30it/s][A
+Epoch 1:   1%|          | 9/1492 [00:03<07:10,  3.44it/s][A
+Epoch 1:   1%|          | 10/1492 [00:03<07:06,  3.48it/s][A
+Epoch 1:   1%|          | 11/1492 [00:03<08:02,  3.07it/s][A
+Epoch 1:   1%|          | 12/1492 [00:04<07:44,  3.18it/s][A
+Epoch 1:   1%|          | 13/1492 [00:04<07:28,  3.30it/s][A
+Epoch 1:   1%|          | 14/1492 [00:04<07:19,  3.36it/s][A
+Epoch 1:   1%|          | 15/1492 [00:04<07:03,  3.49it/s][A
+Epoch 1:   1%|          | 16/1492 [00:33<3:35:33,  8.76s/it][A
+Epoch 1:   1%|          | 17/1492 [00:33<2:32:27,  6.20s/it][A
+Epoch 1:   1%|          | 18/1492 [00:33<1:48:22,  4.41s/it][A
+Epoch 1:   1%|▏         | 19/1492 [00:34<1:17:34,  3.16s/it][A
+Epoch 1:   1%|▏         | 20/1492 [00:34<56:01,  2.28s/it]  [A
+Epoch 1:   1%|▏         | 21/1492 [00:34<41:13,  1.68s/it][A
+Epoch 1:   1%|▏         | 22/1492 [00:34<30:41,  1.25s/it][A
+Epoch 1:   2%|▏         | 23/1492 [00:35<23:33,  1.04it/s][A
+Epoch 1:   2%|▏         | 24/1492 [00:35<18:38,  1.31it/s][A
+Epoch 1:   2%|▏         | 25/1492 [00:35<14:52,  1.64it/s][A
+Epoch 1:   2%|▏         | 26/1492 [00:35<12:10,  2.01it/s][A
+Epoch 1:   2%|▏         | 27/1492 [00:36<10:02,  2.43it/s][A
+Epoch 1:   2%|▏         | 28/1492 [00:36<09:40,  2.52it/s][A
+Epoch 1:   2%|▏         | 29/1492 [00:36<08:35,  2.84it/s][A
+Epoch 1:   2%|▏         | 30/1492 [00:37<07:50,  3.11it/s][A
+Epoch 1:   2%|▏         | 31/1492 [00:37<07:42,  3.16it/s][A
+Epoch 1:   2%|▏         | 32/1492 [00:37<07:22,  3.30it/s][A
+Epoch 1:   2%|▏         | 33/1492 [00:37<07:16,  3.34it/s][A
+Epoch 1:   2%|▏         | 34/1492 [00:38<07:00,  3.46it/s][A
+Epoch 1:   2%|▏         | 35/1492 [00:38<06:59,  3.47it/s][A
+Epoch 1:   2%|▏         | 36/1492 [00:38<06:39,  3.65it/s][A
+Epoch 1:   2%|▏         | 37/1492 [00:38<06:32,  3.71it/s][A
+Epoch 1:   3%|▎         | 38/1492 [00:39<06:20,  3.83it/s][A
+Epoch 1:   3%|▎         | 39/1492 [00:39<06:11,  3.91it/s][A
+Epoch 1:   3%|▎         | 40/1492 [00:39<06:32,  3.70it/s][A
+Epoch 1:   3%|▎         | 41/1492 [00:39<06:18,  3.84it/s][A
+Epoch 1:   3%|▎         | 42/1492 [00:40<06:18,  3.83it/s][A
+Epoch 1:   3%|▎         | 43/1492 [00:40<06:08,  3.93it/s][A
+Epoch 1:   3%|▎         | 44/1492 [00:40<06:04,  3.97it/s][A
+Epoch 1:   3%|▎         | 45/1492 [00:40<06:05,  3.96it/s][A
+Epoch 1:   3%|▎         | 46/1492 [00:41<05:54,  4.08it/s][A
+Epoch 1:   3%|▎         | 47/1492 [00:41<05:57,  4.04it/s][A
+Epoch 1:   3%|▎         | 48/1492 [00:41<06:15,  3.85it/s][A
+Epoch 1:   3%|▎         | 49/1492 [00:42<06:33,  3.67it/s][A
+Epoch 1:   3%|▎         | 50/1492 [00:42<06:24,  3.75it/s][A
+Epoch 1:   3%|▎         | 51/1492 [00:42<06:11,  3.88it/s][A
+Epoch 1:   3%|▎         | 52/1492 [00:42<06:05,  3.95it/s][A
+Epoch 1:   4%|▎         | 53/1492 [00:43<05:59,  4.00it/s][A
+Epoch 1:   4%|▎         | 54/1492 [00:43<05:54,  4.06it/s][A
+Epoch 1:   4%|▎         | 55/1492 [00:43<06:06,  3.92it/s][A
+Epoch 1:   4%|▍         | 56/1492 [00:43<06:00,  3.98it/s][A
+Epoch 1:   4%|▍         | 57/1492 [00:44<06:01,  3.97it/s][A
+Epoch 1:   4%|▍         | 58/1492 [00:44<05:56,  4.02it/s][A
+Epoch 1:   4%|▍         | 59/1492 [00:44<05:53,  4.05it/s][A
+Epoch 1:   4%|▍         | 60/1492 [00:44<05:55,  4.02it/s][A
+Epoch 1:   4%|▍         | 61/1492 [00:45<05:53,  4.05it/s][A
+Epoch 1:   4%|▍         | 62/1492 [00:45<06:12,  3.84it/s][A
+Epoch 1:   4%|▍         | 63/1492 [00:45<06:06,  3.90it/s][A
+Epoch 1:   4%|▍         | 64/1492 [00:45<06:03,  3.93it/s][A
+Epoch 1:   4%|▍         | 65/1492 [00:46<05:59,  3.96it/s][A
+Epoch 1:   4%|▍         | 66/1492 [00:46<06:46,  3.50it/s][A
+Epoch 1:   4%|▍         | 67/1492 [00:46<06:27,  3.68it/s][A
+Epoch 1:   5%|▍         | 68/1492 [00:46<06:40,  3.56it/s][A
+Epoch 1:   5%|▍         | 69/1492 [00:47<06:23,  3.71it/s][A
+Epoch 1:   5%|▍         | 70/1492 [00:47<06:30,  3.64it/s][A
+Epoch 1:   5%|▍         | 71/1492 [00:47<06:15,  3.78it/s][A
+Epoch 1:   5%|▍         | 72/1492 [00:47<06:04,  3.89it/s][A
+Epoch 1:   5%|▍         | 73/1492 [00:48<06:21,  3.72it/s][A
+Epoch 1:   5%|▍         | 74/1492 [00:48<05:52,  4.02it/s][A
+Epoch 1:   5%|▌         | 75/1492 [00:48<05:54,  4.00it/s][A
+Epoch 1:   5%|▌         | 76/1492 [00:48<05:58,  3.95it/s][A
+Epoch 1:   5%|▌         | 77/1492 [00:49<06:09,  3.83it/s][A
+Epoch 1:   5%|▌         | 78/1492 [00:49<06:01,  3.92it/s][A
+Epoch 1:   5%|▌         | 79/1492 [00:49<06:09,  3.83it/s][A
+Epoch 1:   5%|▌         | 80/1492 [00:50<06:19,  3.72it/s][A
+Epoch 1:   5%|▌         | 81/1492 [00:50<06:06,  3.85it/s][A
+Epoch 1:   5%|▌         | 82/1492 [00:50<05:59,  3.92it/s][A
+Epoch 1:   6%|▌         | 83/1492 [00:50<06:56,  3.39it/s][A
+Epoch 1:   6%|▌         | 84/1492 [00:51<06:49,  3.44it/s][A
+Epoch 1:   6%|▌         | 85/1492 [00:51<06:52,  3.41it/s][A
+Epoch 1:   6%|▌         | 86/1492 [00:51<06:38,  3.53it/s][A
+Epoch 1:   6%|▌         | 87/1492 [00:52<06:34,  3.56it/s][A
+Epoch 1:   6%|▌         | 88/1492 [00:52<06:45,  3.47it/s][A
+Epoch 1:   6%|▌         | 89/1492 [00:52<06:31,  3.59it/s][A
+Epoch 1:   6%|▌         | 90/1492 [00:52<06:17,  3.71it/s][A
+Epoch 1:   6%|▌         | 91/1492 [00:53<05:47,  4.03it/s][A
+Epoch 1:   6%|▌         | 92/1492 [00:53<05:51,  3.98it/s][A
+Epoch 1:   6%|▌         | 93/1492 [00:53<05:54,  3.95it/s][A
+Epoch 1:   6%|▋         | 94/1492 [00:53<05:53,  3.95it/s][A
+Epoch 1:   6%|▋         | 95/1492 [00:54<05:47,  4.02it/s][A
+Epoch 1:   6%|▋         | 96/1492 [00:54<05:45,  4.04it/s][A
+Epoch 1:   7%|▋         | 97/1492 [00:54<05:44,  4.05it/s][A
+Epoch 1:   7%|▋         | 98/1492 [00:54<05:54,  3.93it/s][A
+Epoch 1:   7%|▋         | 99/1492 [00:55<06:34,  3.53it/s][A
+Epoch 1:   7%|▋         | 100/1492 [00:55<07:07,  3.25it/s][A
+Epoch 1:   7%|▋         | 101/1492 [00:55<07:29,  3.10it/s][A
+Epoch 1:   7%|▋         | 102/1492 [00:56<07:02,  3.29it/s][A
+Epoch 1:   7%|▋         | 103/1492 [00:56<06:37,  3.49it/s][A
+Epoch 1:   7%|▋         | 104/1492 [00:56<06:39,  3.47it/s][A
+Epoch 1:   7%|▋         | 105/1492 [00:56<06:19,  3.65it/s][A
+Epoch 1:   7%|▋         | 106/1492 [00:57<06:29,  3.55it/s][A
+Epoch 1:   7%|▋         | 107/1492 [00:57<06:15,  3.69it/s][A
+Epoch 1:   7%|▋         | 108/1492 [00:57<06:02,  3.82it/s][A
+Epoch 1:   7%|▋         | 109/1492 [00:58<06:12,  3.72it/s][A
+Epoch 1:   7%|▋         | 110/1492 [00:58<05:59,  3.85it/s][A
+Epoch 1:   7%|▋         | 111/1492 [00:58<05:55,  3.89it/s][A
+Epoch 1:   8%|▊         | 112/1492 [00:58<05:53,  3.90it/s][A
+Epoch 1:   8%|▊         | 113/1492 [00:59<05:51,  3.93it/s][A
+Epoch 1:   8%|▊         | 114/1492 [00:59<05:55,  3.87it/s][A
+Epoch 1:   8%|▊         | 115/1492 [00:59<05:59,  3.83it/s][A
+Epoch 1:   8%|▊         | 116/1492 [00:59<06:06,  3.75it/s][A
+Epoch 1:   8%|▊         | 117/1492 [01:00<06:00,  3.81it/s][A
+Epoch 1:   8%|▊         | 118/1492 [01:00<06:00,  3.81it/s][A
+Epoch 1:   8%|▊         | 119/1492 [01:00<06:00,  3.81it/s][A
+Epoch 1:   8%|▊         | 120/1492 [01:00<05:52,  3.90it/s][A
+Epoch 1:   8%|▊         | 121/1492 [01:01<05:50,  3.91it/s][A
+Epoch 1:   8%|▊         | 122/1492 [01:01<05:50,  3.91it/s][A
+Epoch 1:   8%|▊         | 123/1492 [01:01<06:15,  3.65it/s][A
+Epoch 1:   8%|▊         | 124/1492 [01:01<06:09,  3.71it/s][A
+Epoch 1:   8%|▊         | 125/1492 [01:02<05:56,  3.83it/s][A
+Epoch 1:   8%|▊         | 126/1492 [01:02<05:42,  3.98it/s][A
+Epoch 1:   9%|▊         | 127/1492 [01:02<05:42,  3.99it/s][A
+Epoch 1:   9%|▊         | 128/1492 [01:02<05:47,  3.93it/s][A
+Epoch 1:   9%|▊         | 129/1492 [01:03<05:41,  3.99it/s][A
+Epoch 1:   9%|▊         | 130/1492 [01:03<05:55,  3.83it/s][A
+Epoch 1:   9%|▉         | 131/1492 [01:03<05:47,  3.92it/s][A
+Epoch 1:   9%|▉         | 132/1492 [01:03<05:38,  4.02it/s][A
+Epoch 1:   9%|▉         | 133/1492 [01:04<05:37,  4.02it/s][A
+Epoch 1:   9%|▉         | 134/1492 [01:04<05:34,  4.07it/s][A
+Epoch 1:   9%|▉         | 135/1492 [01:04<05:41,  3.97it/s][A
+Epoch 1:   9%|▉         | 136/1492 [01:04<05:44,  3.94it/s][A
+Epoch 1:   9%|▉         | 137/1492 [01:05<05:39,  3.99it/s][A
+Epoch 1:   9%|▉         | 138/1492 [01:05<05:42,  3.95it/s][A
+Epoch 1:   9%|▉         | 139/1492 [01:05<05:38,  4.00it/s][A
+Epoch 1:   9%|▉         | 140/1492 [01:05<05:35,  4.03it/s][A
+Epoch 1:   9%|▉         | 141/1492 [01:06<05:47,  3.89it/s][A
+Epoch 1:  10%|▉         | 142/1492 [01:06<05:45,  3.91it/s][A
+Epoch 1:  10%|▉         | 143/1492 [01:06<05:40,  3.96it/s][A
+Epoch 1:  10%|▉         | 144/1492 [01:06<05:38,  3.98it/s][A
+Epoch 1:  10%|▉         | 145/1492 [01:07<05:56,  3.78it/s][A
+Epoch 1:  10%|▉         | 146/1492 [01:07<05:46,  3.88it/s][A
+Epoch 1:  10%|▉         | 147/1492 [01:07<05:42,  3.93it/s][A
+Epoch 1:  10%|▉         | 148/1492 [01:07<05:34,  4.02it/s][A
+Epoch 1:  10%|▉         | 149/1492 [01:08<05:12,  4.30it/s][A
+Epoch 1:  10%|█         | 150/1492 [01:08<05:44,  3.89it/s][A
+Epoch 1:  10%|█         | 151/1492 [01:08<05:40,  3.94it/s][A
+Epoch 1:  10%|█         | 152/1492 [01:08<05:36,  3.98it/s][A
+Epoch 1:  10%|█         | 153/1492 [01:09<05:26,  4.10it/s][A
+Epoch 1:  10%|█         | 154/1492 [01:09<05:27,  4.09it/s][A
+Epoch 1:  10%|█         | 155/1492 [01:09<05:27,  4.08it/s][A
+Epoch 1:  10%|█         | 156/1492 [01:09<05:27,  4.08it/s][A
+Epoch 1:  11%|█         | 157/1492 [01:10<05:26,  4.08it/s][A
+Epoch 1:  11%|█         | 158/1492 [01:10<05:30,  4.04it/s][A
+Epoch 1:  11%|█         | 159/1492 [01:10<06:07,  3.62it/s][A
+Epoch 1:  11%|█         | 160/1492 [01:10<05:50,  3.80it/s][A
+Epoch 1:  11%|█         | 161/1492 [01:11<05:58,  3.71it/s][A
+Epoch 1:  11%|█         | 162/1492 [01:11<05:48,  3.81it/s][A
+Epoch 1:  11%|█         | 163/1492 [01:11<05:39,  3.91it/s][A
+Epoch 1:  11%|█         | 164/1492 [01:12<06:03,  3.66it/s][A
+Epoch 1:  11%|█         | 165/1492 [01:12<05:49,  3.80it/s][A
+Epoch 1:  11%|█         | 166/1492 [01:12<05:40,  3.90it/s][A
+Epoch 1:  11%|█         | 167/1492 [01:12<05:33,  3.98it/s][A
+Epoch 1:  11%|█▏        | 168/1492 [01:13<05:32,  3.99it/s][A
+Epoch 1:  11%|█▏        | 169/1492 [01:13<05:58,  3.69it/s][A
+Epoch 1:  11%|█▏        | 170/1492 [01:13<05:56,  3.71it/s][A
+Epoch 1:  11%|█▏        | 171/1492 [01:13<05:46,  3.82it/s][A
+Epoch 1:  12%|█▏        | 172/1492 [01:14<05:42,  3.85it/s][A
+Epoch 1:  12%|█▏        | 173/1492 [01:14<05:53,  3.73it/s][A
+Epoch 1:  12%|█▏        | 174/1492 [01:14<06:07,  3.59it/s][A
+Epoch 1:  12%|█▏        | 175/1492 [01:14<05:52,  3.73it/s][A
+Epoch 1:  12%|█▏        | 176/1492 [01:15<05:42,  3.84it/s][A
+Epoch 1:  12%|█▏        | 177/1492 [01:15<05:38,  3.88it/s][A
+Epoch 1:  12%|█▏        | 178/1492 [01:15<05:32,  3.95it/s][A
+Epoch 1:  12%|█▏        | 179/1492 [01:15<05:27,  4.01it/s][A
+Epoch 1:  12%|█▏        | 180/1492 [01:16<05:23,  4.05it/s][A
+Epoch 1:  12%|█▏        | 181/1492 [01:16<05:26,  4.02it/s][A
+Epoch 1:  12%|█▏        | 182/1492 [01:16<05:31,  3.95it/s][A
+Epoch 1:  12%|█▏        | 183/1492 [01:16<05:34,  3.91it/s][A
+Epoch 1:  12%|█▏        | 184/1492 [01:17<05:18,  4.11it/s][A
+Epoch 1:  12%|█▏        | 185/1492 [01:17<05:14,  4.15it/s][A
+Epoch 1:  12%|█▏        | 186/1492 [01:17<05:13,  4.16it/s][A
+Epoch 1:  13%|█▎        | 187/1492 [01:17<05:07,  4.24it/s][A
+Epoch 1:  13%|█▎        | 188/1492 [01:18<05:14,  4.14it/s][A
+Epoch 1:  13%|█▎        | 189/1492 [01:18<05:14,  4.15it/s][A
+Epoch 1:  13%|█▎        | 190/1492 [01:18<05:13,  4.15it/s][A
+Epoch 1:  13%|█▎        | 191/1492 [01:18<05:13,  4.15it/s][A
+Epoch 1:  13%|█▎        | 192/1492 [01:19<05:23,  4.02it/s][A
+Epoch 1:  13%|█▎        | 193/1492 [01:19<05:26,  3.97it/s][A
+Epoch 1:  13%|█▎        | 194/1492 [01:19<05:44,  3.77it/s][A
+Epoch 1:  13%|█▎        | 195/1492 [01:19<05:36,  3.86it/s][A
+Epoch 1:  13%|█▎        | 196/1492 [01:20<05:28,  3.95it/s][A
+Epoch 1:  13%|█▎        | 197/1492 [01:20<05:27,  3.96it/s][A
+Epoch 1:  13%|█▎        | 198/1492 [01:20<05:24,  3.99it/s][A
+Epoch 1:  13%|█▎        | 199/1492 [01:20<05:33,  3.87it/s][A
+Epoch 1:  13%|█▎        | 200/1492 [01:21<05:28,  3.94it/s][A
+Epoch 1:  13%|█▎        | 201/1492 [01:21<05:23,  3.99it/s][A
+Epoch 1:  14%|█▎        | 202/1492 [01:21<05:18,  4.05it/s][A
+Epoch 1:  14%|█▎        | 203/1492 [01:21<05:22,  4.00it/s][A
+Epoch 1:  14%|█▎        | 204/1492 [01:22<05:17,  4.05it/s][A
+Epoch 1:  14%|█▎        | 205/1492 [01:22<05:16,  4.07it/s][A
+Epoch 1:  14%|█▍        | 206/1492 [01:22<05:18,  4.04it/s][A
+Epoch 1:  14%|█▍        | 207/1492 [01:23<06:14,  3.43it/s][A
+Epoch 1:  14%|█▍        | 208/1492 [01:23<06:13,  3.44it/s][A
+Epoch 1:  14%|█▍        | 209/1492 [01:23<05:57,  3.59it/s][A
+Epoch 1:  14%|█▍        | 210/1492 [01:23<05:44,  3.72it/s][A
+Epoch 1:  14%|█▍        | 211/1492 [01:24<05:39,  3.77it/s][A
+Epoch 1:  14%|█▍        | 212/1492 [01:24<05:37,  3.80it/s][A
+Epoch 1:  14%|█▍        | 213/1492 [01:24<05:28,  3.89it/s][A
+Epoch 1:  14%|█▍        | 214/1492 [01:24<05:23,  3.95it/s][A
+Epoch 1:  14%|█▍        | 215/1492 [01:25<05:20,  3.99it/s][A
+Epoch 1:  14%|█▍        | 216/1492 [01:25<05:14,  4.06it/s][A
+Epoch 1:  15%|█▍        | 217/1492 [01:25<05:13,  4.06it/s][A
+Epoch 1:  15%|█▍        | 218/1492 [01:25<05:12,  4.08it/s][A
+Epoch 1:  15%|█▍        | 219/1492 [01:26<05:11,  4.09it/s][A
+Epoch 1:  15%|█▍        | 220/1492 [01:26<05:18,  4.00it/s][A
+Epoch 1:  15%|█▍        | 221/1492 [01:26<05:16,  4.01it/s][A
+Epoch 1:  15%|█▍        | 222/1492 [01:26<05:16,  4.01it/s][A
+Epoch 1:  15%|█▍        | 223/1492 [01:27<05:15,  4.03it/s][A
+Epoch 1:  15%|█▌        | 224/1492 [01:27<05:52,  3.60it/s][A
+Epoch 1:  15%|█▌        | 225/1492 [01:27<05:50,  3.62it/s][A
+Epoch 1:  15%|█▌        | 226/1492 [01:27<05:37,  3.75it/s][A
+Epoch 1:  15%|█▌        | 227/1492 [01:28<05:38,  3.73it/s][A
+Epoch 1:  15%|█▌        | 228/1492 [01:28<05:31,  3.81it/s][A
+Epoch 1:  15%|█▌        | 229/1492 [01:28<05:22,  3.91it/s][A
+Epoch 1:  15%|█▌        | 230/1492 [01:28<05:32,  3.80it/s][A
+Epoch 1:  15%|█▌        | 231/1492 [01:29<06:11,  3.40it/s][A
+Epoch 1:  16%|█▌        | 232/1492 [01:29<06:00,  3.49it/s][A
+Epoch 1:  16%|█▌        | 233/1492 [01:29<05:44,  3.66it/s][A
+Epoch 1:  16%|█▌        | 234/1492 [01:30<05:31,  3.79it/s][A
+Epoch 1:  16%|█▌        | 235/1492 [01:30<05:22,  3.90it/s][A
+Epoch 1:  16%|█▌        | 236/1492 [01:30<05:15,  3.98it/s][A
+Epoch 1:  16%|█▌        | 237/1492 [01:30<05:18,  3.94it/s][A
+Epoch 1:  16%|█▌        | 238/1492 [01:31<05:20,  3.91it/s][A
+Epoch 1:  16%|█▌        | 239/1492 [01:31<05:24,  3.86it/s][A
+Epoch 1:  16%|█▌        | 240/1492 [01:31<05:15,  3.96it/s][A
+Epoch 1:  16%|█▌        | 241/1492 [01:31<05:11,  4.01it/s][A
+Epoch 1:  16%|█▌        | 242/1492 [01:32<05:16,  3.95it/s][A
+Epoch 1:  16%|█▋        | 243/1492 [01:32<05:38,  3.69it/s][A
+Epoch 1:  16%|█▋        | 244/1492 [01:32<05:34,  3.73it/s][A
+Epoch 1:  16%|█▋        | 245/1492 [01:32<05:28,  3.79it/s][A
+Epoch 1:  16%|█▋        | 246/1492 [01:33<05:20,  3.89it/s][A
+Epoch 1:  17%|█▋        | 247/1492 [01:33<05:57,  3.48it/s][A
+Epoch 1:  17%|█▋        | 248/1492 [01:33<05:39,  3.67it/s][A
+Epoch 1:  17%|█▋        | 249/1492 [01:33<05:24,  3.83it/s][A
+Epoch 1:  17%|█▋        | 250/1492 [01:34<05:20,  3.87it/s][A
+Epoch 1:  17%|█▋        | 251/1492 [01:34<05:17,  3.91it/s][A
+Epoch 1:  17%|█▋        | 252/1492 [01:34<05:13,  3.96it/s][A
+Epoch 1:  17%|█▋        | 253/1492 [01:35<06:42,  3.08it/s][A
+Epoch 1:  17%|█▋        | 254/1492 [01:35<06:13,  3.32it/s][A
+Epoch 1:  17%|█▋        | 255/1492 [01:35<05:54,  3.49it/s][A
+Epoch 1:  17%|█▋        | 256/1492 [01:35<05:45,  3.58it/s][A
+Epoch 1:  17%|█▋        | 257/1492 [01:36<05:59,  3.44it/s][A
+Epoch 1:  17%|█▋        | 258/1492 [01:36<05:42,  3.60it/s][A
+Epoch 1:  17%|█▋        | 259/1492 [01:36<05:36,  3.66it/s][A
+Epoch 1:  17%|█▋        | 260/1492 [01:37<05:58,  3.43it/s][A
+Epoch 1:  17%|█▋        | 261/1492 [01:37<05:45,  3.57it/s][A
+Epoch 1:  18%|█▊        | 262/1492 [01:37<05:33,  3.69it/s][A
+Epoch 1:  18%|█▊        | 263/1492 [01:37<05:23,  3.80it/s][A
+Epoch 1:  18%|█▊        | 264/1492 [01:38<05:12,  3.92it/s][A
+Epoch 1:  18%|█▊        | 265/1492 [01:38<05:17,  3.86it/s][A
+Epoch 1:  18%|█▊        | 266/1492 [01:38<05:30,  3.71it/s][A
+Epoch 1:  18%|█▊        | 267/1492 [01:38<05:19,  3.84it/s][A
+Epoch 1:  18%|█▊        | 268/1492 [01:39<05:12,  3.92it/s][A
+Epoch 1:  18%|█▊        | 269/1492 [01:39<05:14,  3.89it/s][A
+Epoch 1:  18%|█▊        | 270/1492 [01:39<05:15,  3.87it/s][A
+Epoch 1:  18%|█▊        | 271/1492 [01:39<05:10,  3.93it/s][A
+Epoch 1:  18%|█▊        | 272/1492 [01:40<05:39,  3.59it/s][A
+Epoch 1:  18%|█▊        | 273/1492 [01:40<05:25,  3.75it/s][A
+Epoch 1:  18%|█▊        | 274/1492 [01:40<05:20,  3.80it/s][A
+Epoch 1:  18%|█▊        | 275/1492 [01:41<06:05,  3.33it/s][A
+Epoch 1:  18%|█▊        | 276/1492 [01:41<06:10,  3.29it/s][A
+Epoch 1:  19%|█▊        | 277/1492 [01:41<05:46,  3.51it/s][A
+Epoch 1:  19%|█▊        | 278/1492 [01:41<05:30,  3.67it/s][A
+Epoch 1:  19%|█▊        | 279/1492 [01:42<05:24,  3.74it/s][A
+Epoch 1:  19%|█▉        | 280/1492 [01:42<05:22,  3.76it/s][A
+Epoch 1:  19%|█▉        | 281/1492 [01:42<05:21,  3.77it/s][A
+Epoch 1:  19%|█▉        | 282/1492 [01:42<05:12,  3.88it/s][A
+Epoch 1:  19%|█▉        | 283/1492 [01:43<05:05,  3.95it/s][A
+Epoch 1:  19%|█▉        | 284/1492 [01:43<05:34,  3.61it/s][A
+Epoch 1:  19%|█▉        | 285/1492 [01:43<05:29,  3.66it/s][A
+Epoch 1:  19%|█▉        | 286/1492 [01:44<05:19,  3.78it/s][A
+Epoch 1:  19%|█▉        | 287/1492 [01:44<05:11,  3.87it/s][A
+Epoch 1:  19%|█▉        | 288/1492 [01:44<04:48,  4.17it/s][A
+Epoch 1:  19%|█▉        | 289/1492 [01:44<04:53,  4.10it/s][A
+Epoch 1:  19%|█▉        | 290/1492 [01:45<04:59,  4.01it/s][A
+Epoch 1:  20%|█▉        | 291/1492 [01:45<05:01,  3.98it/s][A
+Epoch 1:  20%|█▉        | 292/1492 [01:45<04:58,  4.02it/s][A
+Epoch 1:  20%|█▉        | 293/1492 [01:45<04:54,  4.07it/s][A
+Epoch 1:  20%|█▉        | 294/1492 [01:45<04:53,  4.08it/s][A
+Epoch 1:  20%|█▉        | 295/1492 [01:46<05:17,  3.77it/s][A
+Epoch 1:  20%|█▉        | 296/1492 [01:46<05:24,  3.69it/s][A
+Epoch 1:  20%|█▉        | 297/1492 [01:46<05:15,  3.79it/s][A
+Epoch 1:  20%|█▉        | 298/1492 [01:47<05:06,  3.89it/s][A
+Epoch 1:  20%|██        | 299/1492 [01:47<05:02,  3.95it/s][A
+Epoch 1:  20%|██        | 300/1492 [01:47<05:07,  3.88it/s][A
+Epoch 1:  20%|██        | 301/1492 [01:47<05:01,  3.95it/s][A
+Epoch 1:  20%|██        | 302/1492 [01:48<05:00,  3.96it/s][A
+Epoch 1:  20%|██        | 303/1492 [01:48<05:01,  3.95it/s][A
+Epoch 1:  20%|██        | 304/1492 [01:48<04:59,  3.97it/s][A
+Epoch 1:  20%|██        | 305/1492 [01:48<04:55,  4.02it/s][A
+Epoch 1:  21%|██        | 306/1492 [01:49<04:53,  4.04it/s][A
+Epoch 1:  21%|██        | 307/1492 [01:49<04:49,  4.10it/s][A
+Epoch 1:  21%|██        | 308/1492 [01:49<04:41,  4.20it/s][A
+Epoch 1:  21%|██        | 309/1492 [01:49<04:29,  4.39it/s][A
+Epoch 1:  21%|██        | 310/1492 [01:50<04:52,  4.04it/s][A
+Epoch 1:  21%|██        | 311/1492 [01:50<04:51,  4.06it/s][A
+Epoch 1:  21%|██        | 312/1492 [01:50<05:18,  3.70it/s][A
+Epoch 1:  21%|██        | 313/1492 [01:50<05:09,  3.81it/s][A
+Epoch 1:  21%|██        | 314/1492 [01:51<04:59,  3.93it/s][A
+Epoch 1:  21%|██        | 315/1492 [01:51<05:03,  3.87it/s][A
+Epoch 1:  21%|██        | 316/1492 [01:51<05:02,  3.88it/s][A
+Epoch 1:  21%|██        | 317/1492 [01:51<05:01,  3.90it/s][A
+Epoch 1:  21%|██▏       | 318/1492 [01:52<05:08,  3.81it/s][A
+Epoch 1:  21%|██▏       | 319/1492 [01:52<05:03,  3.86it/s][A
+Epoch 1:  21%|██▏       | 320/1492 [01:52<04:48,  4.06it/s][A
+Epoch 1:  22%|██▏       | 321/1492 [01:52<05:01,  3.89it/s][A
+Epoch 1:  22%|██▏       | 322/1492 [01:53<04:55,  3.96it/s][A
+Epoch 1:  22%|██▏       | 323/1492 [01:53<05:08,  3.79it/s][A
+Epoch 1:  22%|██▏       | 324/1492 [01:53<05:04,  3.84it/s][A
+Epoch 1:  22%|██▏       | 325/1492 [01:53<05:17,  3.68it/s][A
+Epoch 1:  22%|██▏       | 326/1492 [01:54<05:06,  3.80it/s][A
+Epoch 1:  22%|██▏       | 327/1492 [01:54<04:57,  3.91it/s][A
+Epoch 1:  22%|██▏       | 328/1492 [01:54<05:00,  3.87it/s][A
+Epoch 1:  22%|██▏       | 329/1492 [01:54<04:55,  3.94it/s][A
+Epoch 1:  22%|██▏       | 330/1492 [01:55<04:50,  3.99it/s][A
+Epoch 1:  22%|██▏       | 331/1492 [01:55<04:51,  3.98it/s][A
+Epoch 1:  22%|██▏       | 332/1492 [01:55<04:47,  4.03it/s][A
+Epoch 1:  22%|██▏       | 333/1492 [01:55<04:49,  4.01it/s][A
+Epoch 1:  22%|██▏       | 334/1492 [01:56<04:44,  4.07it/s][A
+Epoch 1:  22%|██▏       | 335/1492 [01:56<04:44,  4.07it/s][A
+Epoch 1:  23%|██▎       | 336/1492 [01:56<05:14,  3.68it/s][A
+Epoch 1:  23%|██▎       | 337/1492 [01:57<05:54,  3.26it/s][A
+Epoch 1:  23%|██▎       | 338/1492 [01:57<05:37,  3.41it/s][A
+Epoch 1:  23%|██▎       | 339/1492 [01:57<05:30,  3.49it/s][A
+Epoch 1:  23%|██▎       | 340/1492 [01:57<05:20,  3.60it/s][A
+Epoch 1:  23%|██▎       | 341/1492 [01:58<05:26,  3.53it/s][A
+Epoch 1:  23%|██▎       | 342/1492 [01:58<05:29,  3.49it/s][A
+Epoch 1:  23%|██▎       | 343/1492 [01:58<05:13,  3.67it/s][A
+Epoch 1:  23%|██▎       | 344/1492 [01:59<05:04,  3.77it/s][A
+Epoch 1:  23%|██▎       | 345/1492 [01:59<04:53,  3.90it/s][A
+Epoch 1:  23%|██▎       | 346/1492 [01:59<04:36,  4.14it/s][A
+Epoch 1:  23%|██▎       | 347/1492 [01:59<04:42,  4.05it/s][A
+Epoch 1:  23%|██▎       | 348/1492 [02:00<05:00,  3.80it/s][A
+Epoch 1:  23%|██▎       | 349/1492 [02:00<04:52,  3.90it/s][A
+Epoch 1:  23%|██▎       | 350/1492 [02:00<04:47,  3.97it/s][A
+Epoch 1:  24%|██▎       | 351/1492 [02:00<04:45,  3.99it/s][A
+Epoch 1:  24%|██▎       | 352/1492 [02:01<05:20,  3.56it/s][A
+Epoch 1:  24%|██▎       | 353/1492 [02:01<05:08,  3.69it/s][A
+Epoch 1:  24%|██▎       | 354/1492 [02:01<05:04,  3.73it/s][A
+Epoch 1:  24%|██▍       | 355/1492 [02:01<04:56,  3.83it/s][A
+Epoch 1:  24%|██▍       | 356/1492 [02:02<05:01,  3.77it/s][A
+Epoch 1:  24%|██▍       | 357/1492 [02:02<04:53,  3.86it/s][A
+Epoch 1:  24%|██▍       | 358/1492 [02:02<04:53,  3.86it/s][A
+Epoch 1:  24%|██▍       | 359/1492 [02:02<04:49,  3.91it/s][A
+Epoch 1:  24%|██▍       | 360/1492 [02:03<04:50,  3.90it/s][A
+Epoch 1:  24%|██▍       | 361/1492 [02:03<04:45,  3.97it/s][A
+Epoch 1:  24%|██▍       | 362/1492 [02:03<04:48,  3.92it/s][A
+Epoch 1:  24%|██▍       | 363/1492 [02:03<04:43,  3.99it/s][A
+Epoch 1:  24%|██▍       | 364/1492 [02:04<04:38,  4.05it/s][A
+Epoch 1:  24%|██▍       | 365/1492 [02:04<04:43,  3.98it/s][A
+Epoch 1:  25%|██▍       | 366/1492 [02:04<04:47,  3.91it/s][A
+Epoch 1:  25%|██▍       | 367/1492 [02:04<04:43,  3.96it/s][A
+Epoch 1:  25%|██▍       | 368/1492 [02:05<04:40,  4.01it/s][A
+Epoch 1:  25%|██▍       | 369/1492 [02:05<04:36,  4.06it/s][A
+Epoch 1:  25%|██▍       | 370/1492 [02:05<04:24,  4.25it/s][A
+Epoch 1:  25%|██▍       | 371/1492 [02:05<04:27,  4.18it/s][A
+Epoch 1:  25%|██▍       | 372/1492 [02:06<04:30,  4.15it/s][A
+Epoch 1:  25%|██▌       | 373/1492 [02:06<04:29,  4.15it/s][A
+Epoch 1:  25%|██▌       | 374/1492 [02:06<04:29,  4.16it/s][A
+Epoch 1:  25%|██▌       | 375/1492 [02:06<04:40,  3.98it/s][A
+Epoch 1:  25%|██▌       | 376/1492 [02:07<04:35,  4.05it/s][A
+Epoch 1:  25%|██▌       | 377/1492 [02:07<04:38,  4.01it/s][A
+Epoch 1:  25%|██▌       | 378/1492 [02:07<04:39,  3.99it/s][A
+Epoch 1:  25%|██▌       | 379/1492 [02:07<05:01,  3.69it/s][A
+Epoch 1:  25%|██▌       | 380/1492 [02:08<05:05,  3.64it/s][A
+Epoch 1:  26%|██▌       | 381/1492 [02:08<04:42,  3.93it/s][A
+Epoch 1:  26%|██▌       | 382/1492 [02:08<04:41,  3.94it/s][A
+Epoch 1:  26%|██▌       | 383/1492 [02:08<04:56,  3.74it/s][A
+Epoch 1:  26%|██▌       | 384/1492 [02:09<04:47,  3.85it/s][A
+Epoch 1:  26%|██▌       | 385/1492 [02:09<04:41,  3.93it/s][A
+Epoch 1:  26%|██▌       | 386/1492 [02:09<04:48,  3.84it/s][A
+Epoch 1:  26%|██▌       | 387/1492 [02:09<04:43,  3.90it/s][A
+Epoch 1:  26%|██▌       | 388/1492 [02:10<04:41,  3.92it/s][A
+Epoch 1:  26%|██▌       | 389/1492 [02:10<04:34,  4.02it/s][A
+Epoch 1:  26%|██▌       | 390/1492 [02:10<04:34,  4.01it/s][A
+Epoch 1:  26%|██▌       | 391/1492 [02:10<04:24,  4.16it/s][A
+Epoch 1:  26%|██▋       | 392/1492 [02:11<04:26,  4.13it/s][A
+Epoch 1:  26%|██▋       | 393/1492 [02:11<04:31,  4.04it/s][A
+Epoch 1:  26%|██▋       | 394/1492 [02:11<05:01,  3.64it/s][A
+Epoch 1:  26%|██▋       | 395/1492 [02:12<04:57,  3.69it/s][A
+Epoch 1:  27%|██▋       | 396/1492 [02:12<04:47,  3.81it/s][A
+Epoch 1:  27%|██▋       | 397/1492 [02:12<04:44,  3.85it/s][A
+Epoch 1:  27%|██▋       | 398/1492 [02:12<04:50,  3.76it/s][A
+Epoch 1:  27%|██▋       | 399/1492 [02:13<04:47,  3.80it/s][A
+Epoch 1:  27%|██▋       | 400/1492 [02:13<04:48,  3.78it/s][A
+Epoch 1:  27%|██▋       | 401/1492 [02:13<04:59,  3.65it/s][A
+Epoch 1:  27%|██▋       | 402/1492 [02:13<04:53,  3.71it/s][A
+Epoch 1:  27%|██▋       | 403/1492 [02:14<04:46,  3.80it/s][A
+Epoch 1:  27%|██▋       | 404/1492 [02:14<04:38,  3.91it/s][A
+Epoch 1:  27%|██▋       | 405/1492 [02:14<04:33,  3.97it/s][A
+Epoch 1:  27%|██▋       | 406/1492 [02:14<04:30,  4.02it/s][A
+Epoch 1:  27%|██▋       | 407/1492 [02:15<04:27,  4.06it/s][A
+Epoch 1:  27%|██▋       | 408/1492 [02:15<04:46,  3.79it/s][A
+Epoch 1:  27%|██▋       | 409/1492 [02:15<04:41,  3.85it/s][A
+Epoch 1:  27%|██▋       | 410/1492 [02:15<04:43,  3.81it/s][A
+Epoch 1:  28%|██▊       | 411/1492 [02:16<05:21,  3.36it/s][A
+Epoch 1:  28%|██▊       | 412/1492 [02:16<05:11,  3.47it/s][A
+Epoch 1:  28%|██▊       | 413/1492 [02:16<05:00,  3.59it/s][A
+Epoch 1:  28%|██▊       | 414/1492 [02:17<04:50,  3.72it/s][A
+Epoch 1:  28%|██▊       | 415/1492 [02:17<04:41,  3.82it/s][A
+Epoch 1:  28%|██▊       | 416/1492 [02:17<04:41,  3.82it/s][A
+Epoch 1:  28%|██▊       | 417/1492 [02:17<04:39,  3.85it/s][A
+Epoch 1:  28%|██▊       | 418/1492 [02:18<04:51,  3.68it/s][A
+Epoch 1:  28%|██▊       | 419/1492 [02:18<04:41,  3.81it/s][A
+Epoch 1:  28%|██▊       | 420/1492 [02:18<04:31,  3.95it/s][A
+Epoch 1:  28%|██▊       | 421/1492 [02:18<04:26,  4.01it/s][A
+Epoch 1:  28%|██▊       | 422/1492 [02:19<04:27,  4.00it/s][A
+Epoch 1:  28%|██▊       | 423/1492 [02:19<04:35,  3.89it/s][A
+Epoch 1:  28%|██▊       | 424/1492 [02:19<04:29,  3.96it/s][A
+Epoch 1:  28%|██▊       | 425/1492 [02:19<04:25,  4.02it/s][A
+Epoch 1:  29%|██▊       | 426/1492 [02:20<04:37,  3.83it/s][A
+Epoch 1:  29%|██▊       | 427/1492 [02:20<04:31,  3.93it/s][A
+Epoch 1:  29%|██▊       | 428/1492 [02:20<04:27,  3.98it/s][A
+Epoch 1:  29%|██▉       | 429/1492 [02:20<04:27,  3.97it/s][A
+Epoch 1:  29%|██▉       | 430/1492 [02:21<04:26,  3.98it/s][A
+Epoch 1:  29%|██▉       | 431/1492 [02:21<04:24,  4.02it/s][A
+Epoch 1:  29%|██▉       | 432/1492 [02:21<04:21,  4.05it/s][A
+Epoch 1:  29%|██▉       | 433/1492 [02:21<04:22,  4.04it/s][A
+Epoch 1:  29%|██▉       | 434/1492 [02:22<04:21,  4.04it/s][A
+Epoch 1:  29%|██▉       | 435/1492 [02:22<05:32,  3.18it/s][A
+Epoch 1:  29%|██▉       | 436/1492 [02:22<05:14,  3.35it/s][A
+Epoch 1:  29%|██▉       | 437/1492 [02:23<05:05,  3.45it/s][A
+Epoch 1:  29%|██▉       | 438/1492 [02:23<06:09,  2.85it/s][A
+Epoch 1:  29%|██▉       | 439/1492 [02:23<05:26,  3.22it/s][A
+Epoch 1:  29%|██▉       | 440/1492 [02:24<05:37,  3.11it/s][A
+Epoch 1:  30%|██▉       | 441/1492 [02:24<05:13,  3.35it/s][A
+Epoch 1:  30%|██▉       | 442/1492 [02:24<05:06,  3.42it/s][A
+Epoch 1:  30%|██▉       | 443/1492 [02:24<04:50,  3.61it/s][A
+Epoch 1:  30%|██▉       | 444/1492 [02:25<04:45,  3.67it/s][A
+Epoch 1:  30%|██▉       | 445/1492 [02:25<04:35,  3.80it/s][A
+Epoch 1:  30%|██▉       | 446/1492 [02:25<04:29,  3.87it/s][A
+Epoch 1:  30%|██▉       | 447/1492 [02:25<04:25,  3.93it/s][A
+Epoch 1:  30%|███       | 448/1492 [02:26<04:43,  3.69it/s][A
+Epoch 1:  30%|███       | 449/1492 [02:26<04:35,  3.78it/s][A
+Epoch 1:  30%|███       | 450/1492 [02:26<04:43,  3.67it/s][A
+Epoch 1:  30%|███       | 451/1492 [02:27<04:35,  3.78it/s][A
+Epoch 1:  30%|███       | 452/1492 [02:27<04:33,  3.80it/s][A
+Epoch 1:  30%|███       | 453/1492 [02:27<04:39,  3.71it/s][A
+Epoch 1:  30%|███       | 454/1492 [02:27<04:29,  3.85it/s][A
+Epoch 1:  30%|███       | 455/1492 [02:28<04:23,  3.94it/s][A
+Epoch 1:  31%|███       | 456/1492 [02:28<04:58,  3.47it/s][A
+Epoch 1:  31%|███       | 457/1492 [02:28<04:45,  3.63it/s][A
+Epoch 1:  31%|███       | 458/1492 [02:28<04:34,  3.76it/s][A
+Epoch 1:  31%|███       | 459/1492 [02:29<04:26,  3.87it/s][A
+Epoch 1:  31%|███       | 460/1492 [02:29<04:23,  3.92it/s][A
+Epoch 1:  31%|███       | 461/1492 [02:29<04:19,  3.97it/s][A
+Epoch 1:  31%|███       | 462/1492 [02:29<04:35,  3.75it/s][A
+Epoch 1:  31%|███       | 463/1492 [02:30<04:48,  3.57it/s][A
+Epoch 1:  31%|███       | 464/1492 [02:30<05:45,  2.97it/s][A
+Epoch 1:  31%|███       | 465/1492 [02:30<05:18,  3.23it/s][A
+Epoch 1:  31%|███       | 466/1492 [02:31<05:13,  3.27it/s][A
+Epoch 1:  31%|███▏      | 467/1492 [02:31<04:57,  3.45it/s][A
+Epoch 1:  31%|███▏      | 468/1492 [02:31<04:42,  3.63it/s][A
+Epoch 1:  31%|███▏      | 469/1492 [02:31<04:30,  3.78it/s][A
+Epoch 1:  32%|███▏      | 470/1492 [02:32<04:34,  3.72it/s][A
+Epoch 1:  32%|███▏      | 471/1492 [02:32<04:25,  3.84it/s][A
+Epoch 1:  32%|███▏      | 472/1492 [02:32<04:18,  3.94it/s][A
+Epoch 1:  32%|███▏      | 473/1492 [02:32<04:05,  4.16it/s][A
+Epoch 1:  32%|███▏      | 474/1492 [02:33<04:07,  4.11it/s][A
+Epoch 1:  32%|███▏      | 475/1492 [02:33<04:08,  4.09it/s][A
+Epoch 1:  32%|███▏      | 476/1492 [02:33<04:06,  4.12it/s][A
+Epoch 1:  32%|███▏      | 477/1492 [02:33<04:04,  4.15it/s][A
+Epoch 1:  32%|███▏      | 478/1492 [02:34<04:07,  4.10it/s][A
+Epoch 1:  32%|███▏      | 479/1492 [02:34<04:06,  4.10it/s][A
+Epoch 1:  32%|███▏      | 480/1492 [02:34<04:21,  3.87it/s][A
+Epoch 1:  32%|███▏      | 481/1492 [02:34<04:16,  3.94it/s][A
+Epoch 1:  32%|███▏      | 482/1492 [02:35<04:14,  3.97it/s][A
+Epoch 1:  32%|███▏      | 483/1492 [02:35<04:18,  3.90it/s][A
+Epoch 1:  32%|███▏      | 484/1492 [02:35<04:12,  3.99it/s][A
+Epoch 1:  33%|███▎      | 485/1492 [02:35<04:08,  4.05it/s][A
+Epoch 1:  33%|███▎      | 486/1492 [02:36<04:20,  3.87it/s][A
+Epoch 1:  33%|███▎      | 487/1492 [02:36<04:20,  3.86it/s][A
+Epoch 1:  33%|███▎      | 488/1492 [02:36<04:19,  3.87it/s][A
+Epoch 1:  33%|███▎      | 489/1492 [02:36<04:20,  3.86it/s][A
+Epoch 1:  33%|███▎      | 490/1492 [02:37<04:21,  3.84it/s][A
+Epoch 1:  33%|███▎      | 491/1492 [02:37<04:21,  3.83it/s][A
+Epoch 1:  33%|███▎      | 492/1492 [02:37<04:13,  3.94it/s][A
+Epoch 1:  33%|███▎      | 493/1492 [02:38<04:12,  3.95it/s][A
+Epoch 1:  33%|███▎      | 494/1492 [02:38<04:47,  3.47it/s][A
+Epoch 1:  33%|███▎      | 495/1492 [02:38<04:34,  3.63it/s][A
+Epoch 1:  33%|███▎      | 496/1492 [02:38<04:37,  3.59it/s][A
+Epoch 1:  33%|███▎      | 497/1492 [02:39<04:29,  3.69it/s][A
+Epoch 1:  33%|███▎      | 498/1492 [02:39<04:24,  3.75it/s][A
+Epoch 1:  33%|███▎      | 499/1492 [02:39<04:54,  3.37it/s][A
+Epoch 1:  34%|███▎      | 500/1492 [02:40<04:39,  3.55it/s][A
+Epoch 1:  34%|███▎      | 501/1492 [02:40<04:35,  3.59it/s][A
+Epoch 1:  34%|███▎      | 502/1492 [02:40<04:27,  3.70it/s][A
+Epoch 1:  34%|███▎      | 503/1492 [02:40<04:14,  3.88it/s][A
+Epoch 1:  34%|███▍      | 504/1492 [02:41<04:04,  4.05it/s][A
+Epoch 1:  34%|███▍      | 505/1492 [02:41<04:05,  4.03it/s][A
+Epoch 1:  34%|███▍      | 506/1492 [02:41<04:21,  3.78it/s][A
+Epoch 1:  34%|███▍      | 507/1492 [02:41<04:11,  3.91it/s][A
+Epoch 1:  34%|███▍      | 508/1492 [02:42<04:16,  3.84it/s][A
+Epoch 1:  34%|███▍      | 509/1492 [02:42<04:11,  3.90it/s][A
+Epoch 1:  34%|███▍      | 510/1492 [02:42<04:14,  3.86it/s][A
+Epoch 1:  34%|███▍      | 511/1492 [02:42<04:08,  3.95it/s][A
+Epoch 1:  34%|███▍      | 512/1492 [02:43<04:27,  3.66it/s][A
+Epoch 1:  34%|███▍      | 513/1492 [02:43<04:32,  3.59it/s][A
+Epoch 1:  34%|███▍      | 514/1492 [02:43<04:20,  3.75it/s][A
+Epoch 1:  35%|███▍      | 515/1492 [02:43<04:20,  3.74it/s][A
+Epoch 1:  35%|███▍      | 516/1492 [02:44<04:13,  3.85it/s][A
+Epoch 1:  35%|███▍      | 517/1492 [02:44<04:04,  3.99it/s][A
+Epoch 1:  35%|███▍      | 518/1492 [02:44<04:04,  3.99it/s][A
+Epoch 1:  35%|███▍      | 519/1492 [02:44<04:07,  3.93it/s][A
+Epoch 1:  35%|███▍      | 520/1492 [02:45<04:04,  3.98it/s][A
+Epoch 1:  35%|███▍      | 521/1492 [02:45<04:09,  3.89it/s][A
+Epoch 1:  35%|███▍      | 522/1492 [02:45<04:06,  3.94it/s][A
+Epoch 1:  35%|███▌      | 523/1492 [02:45<04:06,  3.93it/s][A
+Epoch 1:  35%|███▌      | 524/1492 [02:46<04:18,  3.74it/s][A
+Epoch 1:  35%|███▌      | 525/1492 [02:46<04:10,  3.86it/s][A
+Epoch 1:  35%|███▌      | 526/1492 [02:46<04:42,  3.42it/s][A
+Epoch 1:  35%|███▌      | 527/1492 [02:47<04:33,  3.53it/s][A
+Epoch 1:  35%|███▌      | 528/1492 [02:47<04:21,  3.69it/s][A
+Epoch 1:  35%|███▌      | 529/1492 [02:47<04:21,  3.69it/s][A
+Epoch 1:  36%|███▌      | 530/1492 [02:47<04:11,  3.83it/s][A
+Epoch 1:  36%|███▌      | 531/1492 [02:48<04:07,  3.88it/s][A
+Epoch 1:  36%|███▌      | 532/1492 [02:48<04:02,  3.97it/s][A
+Epoch 1:  36%|███▌      | 533/1492 [02:48<04:03,  3.94it/s][A
+Epoch 1:  36%|███▌      | 534/1492 [02:48<04:13,  3.78it/s][A
+Epoch 1:  36%|███▌      | 535/1492 [02:49<04:09,  3.84it/s][A
+Epoch 1:  36%|███▌      | 536/1492 [02:49<04:04,  3.90it/s][A
+Epoch 1:  36%|███▌      | 537/1492 [02:49<04:00,  3.98it/s][A
+Epoch 1:  36%|███▌      | 538/1492 [02:50<05:08,  3.10it/s][A
+Epoch 1:  36%|███▌      | 539/1492 [02:50<04:47,  3.32it/s][A
+Epoch 1:  36%|███▌      | 540/1492 [02:50<04:41,  3.38it/s][A
+Epoch 1:  36%|███▋      | 541/1492 [02:50<04:27,  3.56it/s][A
+Epoch 1:  36%|███▋      | 542/1492 [02:51<04:15,  3.71it/s][A
+Epoch 1:  36%|███▋      | 543/1492 [02:51<04:10,  3.79it/s][A
+Epoch 1:  36%|███▋      | 544/1492 [02:51<04:16,  3.69it/s][A
+Epoch 1:  37%|███▋      | 545/1492 [02:52<04:32,  3.48it/s][A
+Epoch 1:  37%|███▋      | 546/1492 [02:52<04:19,  3.64it/s][A
+Epoch 1:  37%|███▋      | 547/1492 [02:52<04:10,  3.77it/s][A
+Epoch 1:  37%|███▋      | 548/1492 [02:52<04:07,  3.81it/s][A
+Epoch 1:  37%|███▋      | 549/1492 [02:53<04:08,  3.79it/s][A
+Epoch 1:  37%|███▋      | 550/1492 [02:53<04:26,  3.54it/s][A
+Epoch 1:  37%|███▋      | 551/1492 [02:53<04:17,  3.66it/s][A
+Epoch 1:  37%|███▋      | 552/1492 [02:53<04:20,  3.60it/s][A
+Epoch 1:  37%|███▋      | 553/1492 [02:54<04:12,  3.72it/s][A
+Epoch 1:  37%|███▋      | 554/1492 [02:54<04:04,  3.84it/s][A
+Epoch 1:  37%|███▋      | 555/1492 [02:54<04:36,  3.39it/s][A
+Epoch 1:  37%|███▋      | 556/1492 [02:55<04:22,  3.57it/s][A
+Epoch 1:  37%|███▋      | 557/1492 [02:55<04:10,  3.74it/s][A
+Epoch 1:  37%|███▋      | 558/1492 [02:55<04:02,  3.85it/s][A
+Epoch 1:  37%|███▋      | 559/1492 [02:55<03:57,  3.93it/s][A
+Epoch 1:  38%|███▊      | 560/1492 [02:55<03:54,  3.98it/s][A
+Epoch 1:  38%|███▊      | 561/1492 [02:56<04:05,  3.79it/s][A
+Epoch 1:  38%|███▊      | 562/1492 [02:56<03:59,  3.88it/s][A
+Epoch 1:  38%|███▊      | 563/1492 [02:56<03:57,  3.91it/s][A
+Epoch 1:  38%|███▊      | 564/1492 [02:56<03:53,  3.98it/s][A
+Epoch 1:  38%|███▊      | 565/1492 [02:57<03:49,  4.04it/s][A
+Epoch 1:  38%|███▊      | 566/1492 [02:57<03:46,  4.08it/s][Aslurmstepd-comino: error: *** JOB 3231 ON comino CANCELLED AT 2025-06-02T01:40:07 ***
